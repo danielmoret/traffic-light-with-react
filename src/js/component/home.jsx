@@ -32,18 +32,16 @@ const Home = () => {
             setColor("green");
           }}
         ></div>
-        <div
+        {activePurple?<div
           className={
-            activePurple
-              ? color === "purple"
+                color === "purple"
                 ? "light purple brillo"
-                : "light purple"
-              : ""
+                : "light purple"  
           }
           onClick={(event) => {
             setColor("purple");
           }}
-        ></div>
+        ></div>:null}
       </div>
 
       <div className="mt-2">
